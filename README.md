@@ -2,7 +2,7 @@
 
 ## 📌 Visão Geral
 
-Este projeto aplica técnicas de Análise Exploratória de Dados (EDA) e modelagem de séries temporais para compreender e prever a demanda por bicicletas compartilhadas na cidade de Londres. O conjunto de dados é disponibilizado pela plataforma Kaggle e contém registros horários de utilização integrados a variáveis temporais e climáticas. \
+Este projeto aplica técnicas de Análise Exploratória de Dados (EDA) e modelagem de séries temporais para compreender e prever a demanda por bicicletas compartilhadas na cidade de Londres. O conjunto de dados é disponibilizado pela plataforma Kaggle e contém registros horários de utilização integrados a variáveis temporais e climáticas. 
 
 O projeto simula um problema real de previsão de demanda, comum em cenários de mobilidade urbana e planejamento operacional.
 
