@@ -20,9 +20,8 @@ O projeto simula um problema real de previsão de demanda, comum em cenários de
 
 ## 📊 Análise Exploratória de Dados
 
-\*
-A EDA evidenciou que a demanda apresenta forte sazonalidade diária, semanal e anual, além de clara dependência do calendário. A variável de contagem mostrou assimetria positiva, com rejeição da hipótese de normalidade por meio do teste de Shapiro–Wilk, orientando a escolha de abordagens estatísticas e modelos compatíveis com esse comportamento.
-*/
+<!-- 
+A EDA evidenciou que a demanda apresenta forte sazonalidade diária, semanal e anual, além de clara dependência do calendário. A variável de contagem mostrou assimetria positiva, com rejeição da hipótese de normalidade por meio do teste de Shapiro–Wilk, orientando a escolha de abordagens estatísticas e modelos compatíveis com esse comportamento.   -->
 
 A Análise Exploratória de Dados foi conduzida com foco na compreensão do comportamento temporal da demanda e na identificação de padrões estruturais relevantes para a modelagem preditiva. A análise revelou a presença de múltiplas sazonalidades, com ciclos bem definidos em níveis diário, semanal e anual, além de diferenças significativas no volume de aluguéis entre dias úteis, fins de semana e estações do ano.     
   
