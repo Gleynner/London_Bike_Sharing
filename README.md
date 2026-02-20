@@ -14,7 +14,7 @@ O projeto simula um problema real de previsão de demanda, comum em cenários de
 
 - Identificar padrões de tendência e sazonalidade
 
-- Construir um modelo de séries temporais com Prophet para previsão da demanda futura
+- Desenvolver e avaliar um modelo de séries temporais com Prophet para previsão da demanda futura
 
 <br>
 
