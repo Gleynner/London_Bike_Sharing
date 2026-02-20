@@ -57,3 +57,8 @@ Foi utilizado o modelo Prophet, adequado para séries temporais com múltiplas s
 ## ✅ Por que este projeto é relevante?
 
 Este projeto demonstra a aplicação prática de EDA, estatística e modelagem de séries temporais, com decisões metodológicas justificadas e foco em um problema real de previsão de demanda.
+
+<br>
+
+> Veja o notebook para detalhes da análise.
+
