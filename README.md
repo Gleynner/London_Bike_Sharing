@@ -6,7 +6,7 @@ Este projeto aplica técnicas de Análise Exploratória de Dados (EDA) e modelag
 
 O projeto simula um problema real de previsão de demanda, comum em cenários de mobilidade urbana e planejamento operacional.
 
-___________________________________________________________________________________________
+<br>
 
 ## 🎯 Objetivo
 
@@ -16,19 +16,19 @@ ________________________________________________________________________________
 
 - Construir um modelo de séries temporais com Prophet para previsão da demanda futura
 
-___________________________________________________________________________________________
+<br>
 
 ## 📊 Análise Exploratória de Dados
 
 A EDA evidenciou que a demanda apresenta forte sazonalidade diária, semanal e anual, além de clara dependência do calendário. A variável de contagem mostrou assimetria positiva, com rejeição da hipótese de normalidade por meio do teste de Shapiro–Wilk, orientando a escolha de abordagens estatísticas e modelos compatíveis com esse comportamento.
 
-___________________________________________________________________________________________
+<br>
 
 ## 🤖 Modelagem com Prophet
 
 Foi utilizado o modelo Prophet, adequado para séries temporais com múltiplas sazonalidades e necessidade de interpretabilidade. O processo incluiu ajuste de hiperparâmetros e validação temporal. O modelo final capturou de forma consistente a tendência e os ciclos sazonais observados na série histórica, apresentando bom desempenho preditivo.
 
-___________________________________________________________________________________________
+<br>
 
 ## 📈 Insights Executivos
 
@@ -38,7 +38,7 @@ ________________________________________________________________________________
 
 - O Prophet mostrou-se eficaz para previsão de demanda em contextos de mobilidade urbana
 
-___________________________________________________________________________________________
+<br>
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -52,7 +52,7 @@ ________________________________________________________________________________
 
 - Prophet
 
-___________________________________________________________________________________________
+<br>
 
 ## ✅ Por que este projeto é relevante?
 
