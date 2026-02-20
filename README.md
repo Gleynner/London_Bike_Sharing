@@ -36,7 +36,7 @@ Foi utilizado o modelo Prophet, adequado para séries temporais com múltiplas s
 
 - Componentes temporais exercem papel central na explicação do volume de uso
 
-- O Prophet mostrou-se eficaz para previsão de demanda em contextos de mobilidade urbana
+- O Prophet mostrou-se adequado para previsão de demanda em contextos de mobilidade urbana
 
 <br>
 
