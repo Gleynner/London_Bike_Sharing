@@ -56,9 +56,9 @@ Foi utilizado o modelo Prophet, adequado para séries temporais com múltiplas s
 
 - Pandas, NumPy
 
-- Matplotlib, Seaborn e Plotly
+- Matplotlib, Seaborn
 
-- SciPy e sklearn
+- SciPy, Sklearn
 
 - Prophet
 
