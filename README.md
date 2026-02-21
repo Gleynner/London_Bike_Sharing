@@ -72,8 +72,3 @@ Este projeto demonstra a aplicação prática de EDA, estatística e modelagem d
 
 > [Veja o notebook para detalhes da análise.](https://github.com/Gleynner/London_Bike_Sharing/blob/main/bike_demand_forecasting_prophet.ipynb)
 
-> <a href="https://github.com/Gleynner/London_Bike_Sharing/blob/main/bike_demand_forecasting_prophet.ipynb" target="_blank">Veja o notebook para detalhes da análise.</a>
-
-
-> [Veja o notebook para detalhes da análise.][notebook-link]
-> [notebook-link]: [https://www.kaggle.com/](https://github.com/Gleynner/London_Bike_Sharing/blob/main/bike_demand_forecasting_prophet.ipynb)
