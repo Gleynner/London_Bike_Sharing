@@ -23,6 +23,7 @@ Cada observação representa um intervalo de uma hora e inclui, entre outras var
 - Flags de fim de semana e feriado
 
 Essa combinação de atributos torna o dataset especialmente adequado para análises temporais, identificação de padrões sazonais e modelagem preditiva baseada em variáveis exógenas
+
 <br>
 
 ## 🎯 Objetivo
