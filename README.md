@@ -8,6 +8,23 @@ O projeto simula um problema real de previsão de demanda, comum em cenários de
 
 <br>
 
+## 📊 Sobre o Conjunto de Dados
+
+Cada observação representa um intervalo de uma hora e inclui, entre outras variáveis:
+
+- Quantidade de bicicletas alugadas no período
+
+- Data e hora do registro
+
+- Condições climáticas (temperatura, umidade, velocidade do vento e tipo de clima)
+
+- Indicadores de sazonalidade (estação do ano)
+
+- Flags de fim de semana e feriado
+
+Essa combinação de atributos torna o dataset especialmente adequado para análises temporais, identificação de padrões sazonais e modelagem preditiva baseada em variáveis exógenas
+<br>
+
 ## 🎯 Objetivo
 
 - Analisar o comportamento temporal da demanda por bicicletas
