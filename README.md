@@ -1,5 +1,9 @@
 # 🚲 London Bike Sharing — Análise Exploratória e Previsão de Demanda
 
+<p align="center">
+  <img src="assets/London_Bike_Sharing_Imagem.png" width="700"/>
+</p>
+
 ## 📌 Visão Geral
 
 Este projeto aplica técnicas de Análise Exploratória de Dados (EDA) e modelagem de séries temporais para compreender e prever a demanda por bicicletas compartilhadas na cidade de Londres. O conjunto de dados é disponibilizado pela plataforma Kaggle e contém registros horários de utilização integrados a variáveis temporais e climáticas. 
