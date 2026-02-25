@@ -1,7 +1,7 @@
 # 🚲 London Bike Sharing — Análise Exploratória e Previsão de Demanda
 
 <p align="center">
-  <img src="assets/London_Bike_Sharing_Imagem.png" width="700"/>
+  <img src="assets/London_Bike_Sharing_Imagem.png" width="600"/>
 </p>
 
 ## 📌 Visão Geral
