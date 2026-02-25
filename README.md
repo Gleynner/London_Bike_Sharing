@@ -42,14 +42,11 @@ Essa combinação de atributos torna o dataset especialmente adequado para anál
 
 ## 📊 Análise Exploratória de Dados
 
-<!-- 
-A EDA evidenciou que a demanda apresenta forte sazonalidade diária, semanal e anual, além de clara dependência do calendário. A variável de contagem mostrou assimetria positiva, com rejeição da hipótese de normalidade por meio do teste de Shapiro–Wilk, orientando a escolha de abordagens estatísticas e modelos compatíveis com esse comportamento.   -->
+A Análise Exploratória de Dados foi conduzida com o objetivo de compreender o comportamento temporal da demanda por bicicletas e identificar padrões estruturais relevantes para a modelagem preditiva. A análise evidenciou a presença de múltiplas sazonalidades, com ciclos bem definidos nos níveis diário, semanal e anual, além de diferenças consistentes no volume de aluguéis entre dias úteis, fins de semana e estações do ano.
 
-A Análise Exploratória de Dados foi conduzida com foco na compreensão do comportamento temporal da demanda e na identificação de padrões estruturais relevantes para a modelagem preditiva. A análise revelou a presença de múltiplas sazonalidades, com ciclos bem definidos em níveis diário, semanal e anual, além de diferenças significativas no volume de aluguéis entre dias úteis, fins de semana e estações do ano.     
-  
-A avaliação da distribuição da variável alvo (contagem de aluguéis) indicou assimetria positiva, caracterizada por picos de demanda em determinados períodos. Testes formais de normalidade, como o Shapiro–Wilk, foi utilizado em dados referentes a contagem em estações específicas do ano e, rejeitaram a hipótese de normalidade. Adicionalmente, análises comparativas entre estações do ano foram realizadas com métodos não paramétricos, permitindo avaliar diferenças no comportamento da demanda sem assumir normalidade das amostras.     
+A investigação da distribuição da variável alvo revelou a ocorrência de períodos de alta concentração de demanda, associados a picos sazonais e eventos específicos, resultando em uma distribuição assimétrica e na presença de observações extremas. Testes formais de normalidade, como o teste de Shapiro–Wilk, aplicados a subconjuntos dos dados por estação do ano, rejeitaram a hipótese de normalidade. Diante desse contexto, análises comparativas entre estações foram conduzidas por meio de métodos não paramétricos, permitindo avaliar diferenças no comportamento da demanda sem a imposição de pressupostos paramétricos.
 
-As visualizações temporais e estatísticas descritivas forneceram suporte às decisões metodológicas adotadas na etapa de modelagem, garantindo coerência entre as características observadas nos dados e as técnicas empregadas.
+As visualizações temporais e as estatísticas descritivas forneceram suporte direto às decisões metodológicas adotadas na etapa de modelagem, assegurando alinhamento entre as características observadas nos dados e as técnicas empregadas na previsão da série temporal.
 
 
 
