@@ -1,12 +1,13 @@
 # 🚲 Análise Exploratória e Previsão de Demanda — London Bike Sharing  
 
 <p align="center">
-  <img src="assets/London_Bike_Sharing_Image.png" width="670"/>
+  <code>Python</code> <code>Prophet</code> <code>Séries Temporais</code> <code>Testes de Hipótese</code> <code>EDA</code>
 </p>
 
 <p align="center">
-  <code>Python</code> <code>Prophet</code> <code>Séries Temporais</code> <code>Testes de Hipótese</code> <code>EDA</code>
+  <img src="assets/London_Bike_Sharing_Image.png" width="670"/>
 </p>
+
  
 ## 📌 Visão Geral
  
