@@ -4,90 +4,65 @@
   <img src="assets/London_Bike_Sharing_Image.png" width="670"/>
 </p>
 
+<p align="center">
+  <code>Python</code> <code>Prophet</code> <code>Séries Temporais</code> <code>Testes de Hipótese</code> <code>EDA</code>
+</p>
+ 
 ## 📌 Visão Geral
-
-Este projeto aplica técnicas de Análise Exploratória de Dados (EDA) e modelagem de séries temporais para compreender e prever a demanda por bicicletas compartilhadas na cidade de Londres. O conjunto de dados é disponibilizado pela plataforma Kaggle e contém registros horários de utilização integrados a variáveis temporais e climáticas. 
-
-O projeto simula um problema real de previsão de demanda, comum em cenários de mobilidade urbana e planejamento operacional.
-
-<br>
-
-## 📊 Sobre o Conjunto de Dados
-
-Cada observação representa um intervalo de uma hora e inclui, entre outras variáveis:
-
-- Quantidade de bicicletas alugadas no período
-
-- Data e hora do registro
-
-- Condições climáticas (temperatura, umidade, velocidade do vento e tipo de clima)
-
-- Indicadores de sazonalidade (estação do ano)
-
-- Flags de fim de semana e feriado
-
-Essa combinação de atributos torna o dataset especialmente adequado para análises temporais, identificação de padrões sazonais e modelagem preditiva baseada em variáveis exógenas
-
-<br>
-
+ 
+Projeto de Ciência de Dados para compreender e prever a demanda por bicicletas compartilhadas em Londres, combinando testes estatísticos não paramétricos, tratamento de outliers orientado por evidência e validação cruzada temporal para calibrar um modelo de séries temporais com o Prophet. O trabalho simula um problema real de previsão de demanda, comum em cenários de mobilidade urbana e planejamento operacional.
+ 
 ## 🎯 Objetivo
-
-- Analisar o comportamento temporal da demanda por bicicletas
-
-- Identificar padrões de tendência e sazonalidade
-
-- Desenvolver e avaliar um modelo de séries temporais com Prophet para previsão da demanda futura
-
-<br>
-
-## 📊 Análise Exploratória de Dados
-
-A Análise Exploratória de Dados foi conduzida com o objetivo de compreender o comportamento temporal da demanda por bicicletas e identificar padrões estruturais relevantes para a modelagem preditiva. A análise evidenciou a presença de múltiplas sazonalidades, com ciclos bem definidos nos níveis diário, semanal e anual, além de diferenças consistentes no volume de aluguéis entre dias úteis, fins de semana e estações do ano.
-
-A investigação da distribuição da variável alvo revelou a ocorrência de períodos de alta concentração de demanda, associados a picos sazonais e eventos específicos, resultando em uma distribuição assimétrica e na presença de observações extremas. Testes formais de normalidade, como o teste de Shapiro–Wilk, aplicados a subconjuntos dos dados por estação do ano, rejeitaram a hipótese de normalidade. Diante desse contexto, análises comparativas entre estações foram conduzidas por meio de métodos não paramétricos, permitindo avaliar diferenças no comportamento da demanda sem a imposição de pressupostos paramétricos.
-
-As visualizações temporais e as estatísticas descritivas forneceram suporte direto às decisões metodológicas adotadas na etapa de modelagem, assegurando alinhamento entre as características observadas nos dados e as técnicas empregadas na previsão da série temporal.
-
-
-
-<br>
-
+ 
+Analisar o comportamento temporal da demanda por bicicletas, identificar padrões de tendência e sazonalidade, e desenvolver um modelo preditivo capaz de estimar a demanda futura com boa capacidade de generalização.
+ 
+## 📊 Sobre os Dados
+ 
+Dataset do Kaggle com registros horários de aluguel de bicicletas em Londres (jan/2015 a jan/2017), incluindo contagem de aluguéis, variáveis climáticas (temperatura, sensação térmica, umidade, velocidade do vento, tipo de clima) e indicadores de sazonalidade (estação do ano, fim de semana, feriado).
+ 
+## 📈 Resultados Principais
+ 
+| Etapa do Modelo | RMSE Relativo | Classificação |
+|---|:---:|---|
+| Modelo inicial (com outliers) | 18,12% | Boa capacidade preditiva |
+| **Modelo final** (outliers tratados + tuning via cross-validation) | **17,53%** | **Boa capacidade preditiva** |
+ 
+A remoção de observações discrepantes e o ajuste de hiperparâmetros via validação cruzada temporal (grid search) reduziram o erro absoluto em 476,06 unidades. Os melhores hiperparâmetros encontrados foram `changepoint_prior_scale = 0.01`, `seasonality_prior_scale = 10.0` e `yearly_seasonality = True`.
+ 
+## 🔎 Principais Insights
+ 
+- **Sazonalidade forte e multi-nível**: a demanda segue ciclos diários (picos no início da manhã e fim da tarde/início da noite — horários de deslocamento casa-trabalho), semanais (queda nos fins de semana) e anuais (verão no pico, inverno na baixa).
+- **Fatores climáticos têm poder explicativo moderado**: `umidade` é a variável com maior associação à demanda (r² = 21,16%), seguida por `temperatura` (15,21%) e `sensação térmica` (13,69%); `velocidade do vento` tem impacto quase nulo (r² = 1,44%).
+- **Diferença estatisticamente significativa entre estações**: como os dados de contagem por estação não seguem distribuição normal (confirmado pelo teste de Shapiro–Wilk), foi aplicado o teste não paramétrico de Mann–Whitney U, que confirmou diferença estatisticamente significativa entre primavera e outono (p = 0,00048 < 0,05), apesar de ambas apresentarem medianas visualmente próximas.
+- **Anomalia identificada e validada externamente**: um pico de demanda fora do padrão entre julho e outubro de 2015 foi investigado e associado a uma greve do metrô de Londres — achado confirmado com fontes jornalísticas da época (BBC e The Independent), que registraram a recomendação da Transport for London para uso de bicicletas como alternativa.
 ## 🤖 Modelagem com Prophet
-
-Foi utilizado o modelo Prophet, adequado para séries temporais com múltiplas sazonalidades e necessidade de interpretabilidade. O processo incluiu ajuste de hiperparâmetros e validação temporal. O modelo final capturou de forma consistente a tendência e os ciclos sazonais observados na série histórica, apresentando bom desempenho preditivo.
-
-
-<br>
-
-## 📈 Insights Executivos
-
-- A demanda por bicicletas é altamente previsível devido a padrões sazonais recorrentes
-
-- Componentes temporais exercem papel central na explicação do volume de uso
-
-- O Prophet mostrou-se adequado para previsão de demanda em contextos de mobilidade urbana
-
-<br>
-
-## 🛠️ Tecnologias Utilizadas
-
-- Python
-
-- Pandas, NumPy
-
-- Matplotlib, Seaborn
-
-- SciPy, Scikit-learn
-
-- Prophet
-
-<br>
-
-## ✅ Por que este projeto é relevante?
-
-Este projeto demonstra a aplicação prática de EDA, estatística e modelagem de séries temporais, com decisões metodológicas justificadas e foco em um problema real de previsão de demanda.
-
-<br>
-
-> [Veja o notebook para detalhes da análise.](https://github.com/Gleynner/London_Bike_Sharing/blob/main/bike_demand_forecasting_prophet.ipynb)
-
+ 
+O Prophet foi escolhido por sua adequação a séries com múltiplas sazonalidades e por oferecer boa interpretabilidade dos componentes de tendência e sazonalidade. O processo de modelagem seguiu as seguintes etapas:
+ 
+1. **Modelo inicial**, com sazonalidade anual ativada, treinado nos dados completos (RMSE relativo de 18,12%).
+2. **Tratamento de outliers**, com base nos intervalos de confiança gerados pelo próprio Prophet, reduzindo o conjunto a 682 observações.
+3. **Validação cruzada temporal** (janelas deslizantes) com busca em grade sobre `changepoint_prior_scale` e `seasonality_prior_scale`, para encontrar a configuração com melhor generalização fora da amostra.
+4. **Modelo final**, treinado com os melhores hiperparâmetros, resultando em RMSE relativo de 17,53% e maior aderência aos dados observados.
+## 🛠️ Etapas do Projeto
+ 
+1. **Análise Exploratória de Dados** — tratamento de nulos e duplicados, estatísticas descritivas, análise de distribuições e correlações.
+2. **Testes de Hipótese** — Shapiro–Wilk (normalidade) e Mann–Whitney U (comparação entre estações do ano).
+3. **Engenharia de Atributos Temporais** — extração de ano, mês, hora e dia da semana para análise de padrões.
+4. **Preparação para o Prophet** — agregação diária e formatação no padrão exigido pela biblioteca (`ds`, `y`).
+5. **Modelagem e Avaliação** — treino/teste, cálculo de RMSE e RMSE relativo.
+6. **Tratamento de Outliers** — remoção de valores atípicos com base nos intervalos de confiança do modelo.
+7. **Tuning de Hiperparâmetros** — validação cruzada temporal com grid search.
+> 📓 [Veja o notebook completo para todos os detalhes técnicos](https://github.com/Gleynner/Analise_demanda_bike_sharing/blob/main/bike_demand_forecasting_prophet.ipynb)
+ 
+## 📊 Tecnologias
+ 
+`Python` · `Pandas` · `NumPy` · `Matplotlib` · `Seaborn` · `SciPy` · `Scikit-learn` · `Prophet`
+ 
+## 🚀 Próximos Passos
+ 
+- Comparar o desempenho do Prophet com outras abordagens de séries temporais (ex.: SARIMA, LSTM) como benchmark adicional.
+- Incorporar variáveis exógenas de forma mais explícita ao modelo (ex.: clima como regressor, não apenas na EDA).
+- Testar a granularidade horária diretamente no modelo, em vez da agregação diária, para cenários operacionais de curtíssimo prazo.
+## 💡 Principal Aprendizado
+ 
+Mais do que ajustar um modelo, o projeto reforçou a importância de uma EDA estatisticamente rigorosa como base para decisões de modelagem — da escolha de testes não paramétricos diante da violação de normalidade até a investigação e validação externa de uma anomalia nos dados, em vez de simplesmente descartá-la como ruído.
